@@ -183,6 +183,3 @@ Role-based prompting proved to be an effective approach for preparing educationa
 
 ---
 
-**Experiment:** EX-02  
-**Topic:** Cross-Platform Prompt Engineering  
-**Application:** AI-Based Text Summarization
