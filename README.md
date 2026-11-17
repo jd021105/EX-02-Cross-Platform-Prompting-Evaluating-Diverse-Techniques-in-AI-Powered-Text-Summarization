@@ -1,126 +1,188 @@
-EX-02 – Cross-Platform Prompt Engineering: A Comparative Study of AI-Based Text Summarization
-Revised Practical Record
-1. AIM
-To investigate how different prompt engineering techniques influence the quality of text summarization across various AI platforms, including ChatGPT, Gemini, Claude, and Microsoft Copilot.
-2. SCENARIO
-An educational content development team wants to convert lengthy technical articles into short and understandable study materials for engineering students.
+# EX-02 – Cross-Platform Prompt Engineering: A Comparative Study of AI-Based Text Summarization
 
-For this experiment, a technical article titled "Understanding Blockchain Technology and Its Applications" is selected. Different prompting strategies are applied across multiple AI platforms to identify which approach generates the most effective summary.
+## AIM
 
-The generated summaries are compared based on accuracy, readability, completeness, response time, and overall effectiveness.
-3. INTRODUCTION
-AI-powered language models have made it easier to process large amounts of information and convert them into shorter summaries. Platforms such as ChatGPT, Gemini, Claude, and Microsoft Copilot can understand technical content and generate simplified explanations.
+To investigate and compare the effectiveness of different prompt engineering techniques across AI platforms such as ChatGPT, Gemini, Claude, and Microsoft Copilot for generating accurate, simple, and meaningful text summaries.
 
-However, the quality of generated summaries depends not only on the AI platform but also on the instructions provided to it.
+## SCENARIO
 
-Prompt engineering helps users guide AI systems by defining the task, providing examples, requesting structured responses, and assigning specific roles.
+An educational content development team aims to convert lengthy technical articles into short and understandable study materials for engineering students.
 
-This experiment explores four prompting approaches to understand their impact on technical text summarization.
-4. AI PLATFORMS
-Platform	Main functionality
-ChatGPT	Generates conversational and structured summaries
-Gemini	Provides contextual understanding and information synthesis
-Claude	Focuses on detailed and coherent responses
-Microsoft Copilot	Supports AI-assisted information processing
+For this experiment, an article titled **"Understanding Blockchain Technology and Its Applications"** is selected. Different prompting strategies are applied across multiple AI platforms to identify the most effective combination for technical text summarization.
 
-5. PROMPTING TECHNIQUES
-1. Zero-shot prompting
+The generated summaries are evaluated based on accuracy, coherence, simplicity, response speed, and user experience.
 
-The AI receives a direct instruction without any sample output.
+---
 
-Example:
+## INTRODUCTION
 
-"Read the given blockchain article and prepare a short summary highlighting its important concepts."
+Artificial Intelligence platforms have become useful tools for processing large amounts of information and generating concise summaries. Platforms such as ChatGPT, Gemini, Claude, and Microsoft Copilot can simplify complex technical concepts into understandable content.
 
-2. Few-shot prompting
+The quality of AI-generated responses depends significantly on the instructions provided to the model. Prompt engineering helps users guide AI systems by defining specific tasks, providing examples, and assigning appropriate roles.
 
-The AI receives one or more sample summaries to understand the expected format and writing style.
+This experiment explores different prompting techniques to understand their impact on AI-based text summarization.
 
-Example:
+## AI PLATFORMS USED
 
-"Here are two examples of technical summaries. Follow the same structure and summarize the given blockchain article."
+| Platform | Description |
+|---|---|
+| ChatGPT | Generates structured and conversational summaries |
+| Gemini | Provides contextual understanding and information synthesis |
+| Claude | Produces detailed and coherent responses |
+| Microsoft Copilot | Supports AI-assisted information processing |
 
-3. Chain-of-Thought prompting
+---
 
-The AI is encouraged to examine the important concepts before preparing the final summary.
+## PROMPTING TECHNIQUES
 
-Example:
+### 1. Zero-shot Prompting
 
-"Identify the main ideas, important technical terms, and relationships between concepts before producing a concise summary."
+The AI is given a direct instruction without providing any examples.
 
-4. Role-based prompting
+**Example:**
+> Summarize the given blockchain article and highlight its most important concepts in simple language.
 
-The AI is assigned a particular professional or educational role.
+### 2. Few-shot Prompting
 
-Example:
+The AI is provided with sample summaries to understand the expected format and writing style.
 
-"Act as an experienced computer science professor and explain blockchain technology in simple terms for undergraduate engineering students."
-6. ARTICLE SELECTED FOR EXPERIMENT
-Title: Understanding Blockchain Technology and Its Applications
+**Example:**
+> Here are two examples of technical summaries. Follow the same structure and summarize the given blockchain article.
 
-The article focuses on the following concepts:
-- Blockchain architecture and its working principle.
+### 3. Chain-of-Thought Prompting
+
+The AI is instructed to examine the important concepts and organize the information before producing the final summary.
+
+**Example:**
+> Identify the main ideas, important technical terms, and relationships between concepts before generating a concise summary.
+
+### 4. Role-based Prompting
+
+The AI is assigned a specific professional or educational role to generate audience-oriented content.
+
+**Example:**
+> Act as an experienced computer science professor and explain blockchain technology in simple terms for undergraduate engineering students.
+
+---
+
+## ARTICLE USED FOR SUMMARIZATION
+
+### Topic: Understanding Blockchain Technology and Its Applications
+
+**Key Concepts Covered:**
+
+- Blockchain architecture and working principles.
 - Distributed databases and decentralized networks.
 - Cryptographic hashing and digital signatures.
 - Block creation and transaction validation.
 - Consensus algorithms such as Proof of Work and Proof of Stake.
-- Applications in digital currencies, healthcare, finance, and supply chain management.
-7. METHODOLOGY
-The experiment follows four major stages.
+- Applications in cryptocurrency, healthcare, finance, and supply chain management.
 
-Stage 1 – Platform Selection: Four AI platforms are selected for comparative analysis.
+---
 
-Stage 2 – Prompt Development: Four different prompting techniques are prepared with suitable instructions.
+## METHODOLOGY
 
-Stage 3 – Summary Generation: The same technical article is submitted to each platform using the selected prompting methods.
+The experiment is performed through the following stages:
 
-Stage 4 – Performance Analysis: The generated responses are examined and compared using five evaluation parameters.
-8. EVALUATION PARAMETERS
-Parameter	Evaluation criteria
-Accuracy	Correctness of technical information
-Coherence	Logical flow of sentences
-Simplicity	Ease of understanding
-Speed	Time taken to generate the response
-User Experience	Overall readability and usefulness
+**Step 1: Platform Selection**
 
-9. COMPARATIVE EVALUATION
-The following is a sample qualitative evaluation for the experiment.
-Platform	Prompt technique	Accuracy	Coherence	Simplicity	Speed
-ChatGPT	Role-based	Excellent	Excellent	Excellent	Fast
-ChatGPT	Zero-shot	Good	Very Good	Very Good	Fast
-Gemini	Few-shot	Very Good	Excellent	Very Good	Fast
-Claude	Chain-of-Thought	Excellent	Excellent	Very Good	Moderate
-Copilot	Zero-shot	Good	Good	Good	Fast
+Select four AI platforms: ChatGPT, Gemini, Claude, and Microsoft Copilot.
 
-Note: These are illustrative evaluation results, not verified benchmark measurements. Actual performance can vary with model versions, article input, and testing conditions.
-10. OBSERVATIONS
-1. Role-based prompting generated audience-oriented summaries with simpler explanations.
-2. Few-shot prompting helped maintain a consistent output structure.
-3. Chain-of-Thought-style instructions encouraged more organized analysis.
-4. Zero-shot prompting generated summaries quickly but sometimes missed secondary concepts.
-5. The quality of the response varied depending on the AI platform and prompt instructions.
-11. BENEFITS OF PROMPT ENGINEERING
+**Step 2: Prompt Development**
+
+Prepare four different prompting strategies: Zero-shot, Few-shot, Chain-of-Thought, and Role-based prompting.
+
+**Step 3: Summary Generation**
+
+Submit the same blockchain article to each AI platform using the selected prompting techniques.
+
+**Step 4: Performance Evaluation**
+
+Compare the generated summaries using five parameters:
+
+- Accuracy
+- Coherence
+- Simplicity
+- Speed
+- User Experience
+
+---
+
+## EVALUATION PARAMETERS
+
+| Parameter | Evaluation Criteria |
+|---|---|
+| Accuracy | Correctness of technical information |
+| Coherence | Logical flow and sentence structure |
+| Simplicity | Ease of understanding |
+| Speed | Time required to generate the response |
+| User Experience | Overall readability and usefulness |
+
+---
+
+## COMPARATIVE EVALUATION
+
+The following table represents illustrative qualitative evaluation results.
+
+| Platform | Prompt Type | Accuracy | Coherence | Simplicity | Speed | User Experience |
+|---|---|---|---|---|---|---|
+| ChatGPT | Role-based | Excellent | Excellent | Excellent | Fast | Excellent |
+| ChatGPT | Zero-shot | Good | Very Good | Very Good | Fast | Very Good |
+| Gemini | Few-shot | Very Good | Excellent | Very Good | Fast | Very Good |
+| Claude | Chain-of-Thought | Excellent | Excellent | Very Good | Moderate | Excellent |
+| Copilot | Zero-shot | Good | Good | Good | Fast | Good |
+
+---
+
+## OBSERVATIONS
+
+1. Role-based prompting generated audience-oriented summaries with simple explanations.
+2. Few-shot prompting improved the consistency of the generated output.
+3. Chain-of-Thought-style instructions helped organize technical information.
+4. Zero-shot prompting generated summaries quickly but sometimes omitted secondary concepts.
+5. Different AI platforms demonstrated different strengths depending on the prompting technique.
+
+## ADVANTAGES OF PROMPT ENGINEERING
+
 - Improves the relevance of AI-generated content.
-- Helps simplify complex technical information.
+- Simplifies complex technical information.
 - Provides better control over response structure.
 - Supports personalized educational materials.
 - Reduces unnecessary information in summaries.
-12. CHALLENGES AND LIMITATIONS
-- Different platforms may produce different interpretations.
-- Detailed prompts can increase processing time.
-- Important technical concepts may be omitted during summarization.
-- AI-generated information requires human verification.
-- Evaluation may involve subjective judgments.
-13. OUTPUT
-<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/a1caee9d-2a8a-4ec3-9831-9d3393e55852" />
+
+## LIMITATIONS
+
+- Results may vary across different AI platforms.
+- Detailed prompts may increase response time.
+- Important technical information may be omitted.
+- Some AI systems may oversimplify technical concepts.
+- Human verification is required to ensure accuracy.
+
+---
+
+## OUTPUT
+
+The following infographic illustrates the experimental workflow, prompting strategies, evaluation results, key observations, and overall findings.
+
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/0684f48d-63ba-4556-acc2-dbeb8f1b3eb3" />
 
 
-The generated output image is displayed above.
-14. RESULT
-The experiment demonstrated that prompt engineering has a significant influence on AI-based text summarization. Among the tested approaches, role-based prompting with ChatGPT provided a strong overall balance of accuracy, coherence, and simplicity in the illustrative evaluation.
+---
 
-Few-shot prompting improved formatting consistency, while structured reasoning instructions helped organize technical information.
-15. CONCLUSION
-This experiment highlighted the importance of selecting suitable prompting strategies when working with AI-powered summarization tools. Different AI platforms demonstrated different strengths in understanding and simplifying technical information.
+## RESULT
 
-Role-based prompting was identified as an effective approach for preparing educational summaries because it adapts explanations to the target audience. Overall, prompt engineering improves the usefulness of AI systems in technical education, research, and information management.
+The experiment demonstrated that prompt engineering significantly influences the quality of AI-generated summaries. Among the evaluated approaches, **Role-based Prompting with ChatGPT** provided a strong balance of accuracy, coherence, simplicity, and user experience in the illustrative evaluation.
+
+Few-shot prompting improved output consistency, while structured reasoning instructions helped organize technical information.
+
+## CONCLUSION
+
+This experiment demonstrated the importance of selecting suitable prompting strategies for AI-powered text summarization. Different AI platforms exhibited different strengths in understanding and simplifying technical information.
+
+Role-based prompting proved to be an effective approach for preparing educational summaries because it adapts explanations to the target audience. Overall, prompt engineering enhances the usefulness of AI systems in technical education, research, and information management.
+
+---
+
+**Experiment:** EX-02  
+**Topic:** Cross-Platform Prompt Engineering  
+**Application:** AI-Based Text Summarization
